@@ -1,0 +1,27 @@
+$hover-border-bottom: #0f0f0f;
+
+.navigation-container {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-title {
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 0;
+  border-bottom: 2px solid $hover-border-bottom;
+}
+
+.navigation-link {
+  margin-right: 25px;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    transition: ease-in 0.3s;
+    border-bottom: 2px solid $hover-border-bottom;
+  }
+
+  &:active {
+    transition: ease 0.2s;
+    transform: scale(1.05);
+  }
+}

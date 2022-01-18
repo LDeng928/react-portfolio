@@ -1,0 +1,127 @@
+$font-color: #1a1b1f;
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 554px;
+$base: 0.5rem;
+$text-accent: rgba(72, 48, 230, 0.1);
+$white-color: #ffffff;
+
+.about-container {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  color: $font-color;
+  margin: 200px 140px 0 0;
+  padding: 0 50px 0 50px;
+  min-height: 70vh;
+
+  .about-name {
+    font-size: 28px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  .about-title {
+    opacity: 0.8;
+  }
+
+  .about-content {
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    line-height: 80px;
+
+    span {
+      background: linear-gradient(180deg, $white-color 60%, $text-accent 40%);
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 28px;
+      line-height: normal;
+    }
+  }
+
+  .about-description {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+  }
+
+  .location-wrapper {
+    display: flex;
+
+    font-size: 18px;
+
+    .location-icon {
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+  }
+
+  // Scroll animation - PENDING
+  // .about-scroll {
+
+  //   small {
+  //     margin-right: 8px;
+  //   }
+
+  //   .about-down-arrow {
+  //     position: absolute;
+  //     top: 500px;
+  //     width: $base * 2.5;
+  //     height: calc($base + 10px);
+  //     opacity: 0;
+  //     transform: scale(0.5);
+  //     animation: move-down-arrow 3s ease-out infinite;
+
+  //     &:first-child {
+  //       animation: move-down-arrow 3s ease-out 1s infinite;
+  //     }
+
+  //     &:nth-child(2) {
+  //       animation: move-down-arrow 3s ease-out 1s infinite;
+  //     }
+
+  //     ::before,
+  //     ::after {
+  //       content: '';
+  //       position: absolute;
+  //       top: 0;
+  //       height: 100%;
+  //       width: 50%;
+  //       background: #2c3e50;
+  //     }
+
+  //     ::before {
+  //       left: 0;
+  //       transform: skewY(30deg);
+  //     }
+
+  //     ::after {
+  //       right: 0;
+  //       width: 50%;
+  //       transform: skewY(-30deg);
+  //     }
+
+  //     @media (max-width: $breakpoint-tablet) {
+  //       top: 1000px;
+  //       height: calc($base + 5px);
+  //     }
+
+  //     @media (max-width: $breakpoint-phone) {
+  //       top: 800px;
+  //       height: calc($base + 5px);
+  //     }
+  //   }
+  // }
+}
+
+@keyframes move-down-arrow {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY($base * 5.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY($base * 8) scale(0.5);
+  }
+}

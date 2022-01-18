@@ -1,0 +1,16 @@
+.projects-container {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 50px 0 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    padding: 30px;
+  }
+
+  .project-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
